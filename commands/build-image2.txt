@@ -1,0 +1,8 @@
+docker build platziapp .
+-
+docker run -it --rm -p 3000:3000 -v ${PWD}:/usr/src --name nodeplatzi platziapp
+docker run -it --rm -p 3000:3000 -v ${PWD}:/usr/src --name nodeplatzi platziapp bash
+
+
+revisar la estructura de los copy
+node install

@@ -5,6 +5,7 @@ services:
     image: platziapp
     environment:
       MONGO_URL: "mongodb://db:27017/test"
+      # Agregamos las variables de entorno 
     depends_on:
       - db
     ports:
