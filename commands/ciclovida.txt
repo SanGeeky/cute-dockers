@@ -1,0 +1,6 @@
+ docker ps -a (veo todos los contenedores)
+$ docker --name <nombre> -d ubuntu -f <comando>
+$ docker --name alwaysup -d ubuntu tail -f /dev/null (mantiene el contenedor activo)
+$ docker exec -it alwaysup bash (entro al contenedor)
+$ docker inspect --format ‘{{.State.Pid}}’ alwaysup (veo el main process del ubuntu)
+desde Linux si ejecuto kill -9 <PID>
