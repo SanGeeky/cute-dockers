@@ -1,0 +1,20 @@
+eliminar todo
+docker rm -f $(docker ps -aq)
+
+-Iniciar servicios
+docker-compose up -d
+
+-Finalizar servicios
+docker-compose down
+
+-Build wiht docker-compose
+docker-compose build
+
+-entrar a terminal de la app
+docker-compose exec app bash
+
+-mostrar logs app
+docker-compose logs app
+
+-Iniciar o escalar la app
+docker-compose --scale app=4

@@ -1,0 +1,21 @@
+docker network create --attachable sangeekynet
+-
+docker network ls
+-
+docker network inspect sangeky net
+
+--Conectar un container a una red
+docker run -d --none db mongo
+-
+docker network connect sangeekynet db
+
+
+--Conectar un container a la misma red
+(se identificaran por el nombre del container)
+
+docker run -d --name app -p 3000:3000 --env MONGO_URL=mongodb://db:27017/platzi platziapp
+-
+docker network connect sangeekynet app
+
+- Eliminar network
+ docker network rm postman-course-master_default

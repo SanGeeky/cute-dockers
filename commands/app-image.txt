@@ -1,0 +1,5 @@
+docker build -t platziapp:tag
+-
+docker image ls
+- corre y elimina la imagen al terminar
+docker run --rm -p 3000:3000 platziapp:tag

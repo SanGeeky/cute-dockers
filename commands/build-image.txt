@@ -1,0 +1,8 @@
+docker build -t ubuntu:sangeeky .
+-
+docker run -it ubuntu:sangeeky
+-
+
+docker tag ubuntu:sangeeky sangeeky/ubuntu:sangeeky
+docker push sangeeky/ubuntu:sangeeky
+docker pull sangeeky/ubuntu:sangeeky
